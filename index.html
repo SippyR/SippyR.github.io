@@ -114,7 +114,7 @@
 			alert("This is your first time visiting. Welcome!")
 			document.cookie = "lastVisit="+ new Date()
 		}else{
-			alert("Last visit: " + document.cookie.substring(9, document.cookie.length))
+			alert("Welcome Back your last visit was on " + document.cookie.substring(10, document.cookie.length))
 			document.cookie = "lastVisit="+ new Date()
 		}
 		
