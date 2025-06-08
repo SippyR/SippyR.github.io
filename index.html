@@ -23,6 +23,11 @@
 		<button class="btn btn-primary mb-3" onclick="showhideEmail()">Show My Email</button>
 		<div id="email"></div>
 		<script src="email.js"></script>
+		<div id="resumeApp">
+  					<a :href="resumeUrl" class="btn btn-primary" target="_blank">
+    					{{ buttonText }}
+  					</a>
+				</div>
 	</div>
 	<div class="container">
 		<div class="row">
@@ -31,11 +36,6 @@
 				<canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
 				<div id="waphLink"></div>
 				<a href="https://sippyr.github.io/waph.html"> WAPH Info</a>
-				<div id="resumeApp">
-  					<a :href="resumeUrl" class="btn btn-success" target="_blank">
-    					{{ buttonText }}
-  					</a>
-				</div>
 				<div id="pageTracker"></div>
 				Flag Counter
 				<a href="https://info.flagcounter.com/2N7h"><img src="https://s01.flagcounter.com/count2/2N7h/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
