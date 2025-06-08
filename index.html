@@ -109,6 +109,14 @@
 			const result = await response.json();
 			$("#xkcd").html('<img src = "' + result.img + '">');
 		}
+
+		if(document.cookie.indexOf("lastVisit")<0{
+			alert("This is your first time visiting. Welcome!")
+			document.cookie = "lastVisit="+date()
+		}else{
+			alert("Last visit: " + document.cookie.substring(9, document.cookie.length))
+			document.cookie = "lastVisit="+date()
+		}
 		
 	</script>
 	</div>
