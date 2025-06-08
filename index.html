@@ -3,28 +3,12 @@
 <head>
 	<meta charset = "utf-8">
 	<title>WAPH-Ryan Sippy</title>
-	<link rel="stylesheet"
-	href=https://waph-phung.github.io/style1.css>
-	<style>
-		.button{
-			background-color: #4CAF50;
-			border: none;
-			color: white;
-			padding: 5px;
-			text-align: center;
-			text-decoration: none;
-			display: inline-block;
-			font-size: 12px;
-			margin: 4px 2px;
-			cursor: pointer;
-		}
-		.round {border-radius: 8px;}
-		#response {background-color: #ff9800;}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container wrapper">
+	<div class="container">
 	<div id="top">
 		<h1>Ryan Sippy</h1>
 		<h2>Liberty Township, OH 45011</h2>
@@ -120,20 +104,27 @@
 		
 	</script>
 	</div>
-
-	<div id="main">
-		<b>Welcome to my Professional Portfolio</b>
-		Hello, my name is Ryan Sippy. I am a fourth-year computer science student at the University of Cincinnati. I am working towards both my Bachelor's degree in Computer Science with a minor in Business Analytics and a Master's of Science in Computer Science.
-		I have also completed three co-ops at Siemens Digital Industries Software, where I worked on the NX Visualization team.
+	<div class="container">
+  		<div class="row">
+    			<div class="col-md-8">
+				<div id="main">
+					<b>Welcome to my Professional Portfolio</b>
+						Hello, my name is Ryan Sippy. I am a fourth-year computer science student at the University of Cincinnati. I am working towards both my Bachelor's degree in Computer Science with a minor in Business Analytics and a Master's of Science in Computer Science.
+						I have also completed three co-ops at Siemens Digital Industries Software, where I worked on the NX Visualization team.
 	<hr>
-	<div>
-		<b>External JokeAPI</b><br>
-			This is an external API. It will generate a new joke every minute. Because it is an third-party API, I have no control over the generated content.
-			<div id="jokeResponse"></div>
+					<div>
+						<b>External JokeAPI</b><be>
+						This is an external API. It will generate a new joke every minute. Because it is an third-party API, I have no control over the generated content.
+						<div id="jokeResponse"></div>
 			
 	<hr>
-	<b>External XKCD Comic API</b><br>
-	<div id="xkcd" onclick="getXKCD()">Show XKCD Comic</div>
+						<b>External XKCD Comic API</b><be>
+						<div id="xkcd" onclick="getXKCD()">Show XKCD Comic</div></be>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 </div>
 </body>
