@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<style>
 		.bg-1{
@@ -30,12 +31,16 @@
 				<canvas id="analog-clock" width="150" height="150" style="background-color:#999"></canvas>
 				<div id="waphLink"></div>
 				<a href="https://sippyr.github.io/waph.html"> WAPH Info</a>
-
+				<div id="resumeApp">
+  					<a :href="resumeUrl" class="btn btn-success" target="_blank">
+    					{{ buttonText }}
+  					</a>
+				</div>
 				<div id="pageTracker"></div>
 				Flag Counter
 				<a href="https://info.flagcounter.com/2N7h"><img src="https://s01.flagcounter.com/count2/2N7h/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
 				<script src="https://waph-phung.github.io/clock.js"></script>
-				<script>
+		<script>
 		function displayTime() {
 			document.getElementById('digit-clock').innerHTML = "Current time: " + new Date();
 		}
@@ -53,6 +58,14 @@
 			drawNumbers(ctx, radius);
 			drawTime(ctx, radius);
 		}
+
+		new Vue({
+      			el: '#vue-resume',
+      			data: {
+       			resumeUrl: 'Sippy_Ryan_Resume_2025.pdf',
+       			buttonText: 'View My Resume'
+      			}
+   		 });
 
 		function getEcho() {
 			var input = document.getElementById("data").value;
