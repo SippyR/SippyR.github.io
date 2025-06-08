@@ -107,7 +107,7 @@
 		async function getXKCD(){
 			const response = await fetch("https://xkcd.vercel.app/?comic=latest");
 			const result = await response.json();
-			$("#xkcd").html('<img src = ' + result.image + '>');
+			$("#xkcd").html('<img src = ' + result.img + '>');
 		}
 		
 	</script>
