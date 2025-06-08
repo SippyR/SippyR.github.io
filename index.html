@@ -112,10 +112,10 @@
 
 		if(document.cookie.indexOf("lastVisit")<0){
 			alert("This is your first time visiting. Welcome!")
-			document.cookie = "lastVisit="+date()
+			document.cookie = "lastVisit="+ new date()
 		}else{
 			alert("Last visit: " + document.cookie.substring(9, document.cookie.length))
-			document.cookie = "lastVisit="+date()
+			document.cookie = "lastVisit="+ new date()
 		}
 		
 	</script>
