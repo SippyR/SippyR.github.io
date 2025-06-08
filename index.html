@@ -102,10 +102,10 @@
 		}
 
 		if(document.cookie.indexOf("lastVisit")<0){
-			alert("This is your first time visiting. Welcome!")
+			alert("Welcome to my homepage for the first time!")
 			document.cookie = "lastVisit="+ new Date()
 		}else{
-			alert("Welcome Back your last visit was on " + document.cookie.substring(10, document.cookie.length))
+			alert("Welcome back! Your last visit was " + document.cookie.substring(10, document.cookie.length))
 			document.cookie = "lastVisit="+ new Date()
 		}
 		
