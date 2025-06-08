@@ -101,7 +101,14 @@
 			const result = await response.json();
 			$("#jokeResponse").html("Your joke is: " + result.joke);
 		}
-		setInterval(getJoke, 10000)
+		getJoke()
+		setInterval(getJoke, 60000)
+
+		async function getXKCD(){
+			const response = await fetch("https://xkcd.vercel.app/?comic=latest");
+			const result = await response.json();
+			$("#xkcd").html('<img src = ' + result.image + '>');
+		}
 		
 	</script>
 	</div>
@@ -112,14 +119,13 @@
 		I have also completed three co-ops at Siemens Digital Industries Software, where I worked on the NX Visualization team.
 	<hr>
 	<div>
-		<i>External JokeAPI</i><br>
-			This is an external API; I am not responsible for the generated content.
+		<b>External JokeAPI</b><br>
+			This is an external API. It will generate a new joke every minute. Because it is an third-party API, I have no control over the generated content.
 			<div id="jokeResponse"></div>
 			
 	<hr>
-	<b>Experiements with JavaScript code</b><br>
-	<i>Inlined JavaScript</i>
-	<div id="date" onclick="document.getElementById('date').innerHTML = Date()">Show Date()</div>
+	<b>External XKCD Comic API</b><br>
+	<div id="xkcd" onclick=getXKCD()">Show XKCD Comic</div>
 </div>
 </div>
 </body>
