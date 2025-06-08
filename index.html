@@ -96,6 +96,12 @@
 			$("#data").val("");
 		}
 
+		async function getJoke(){
+			const response = await fetch("https://v2.jokeapi.dev/joke/Any?type=single");
+			const result = await response.json();
+			$("#response").html("Your joke is: " + result.joke);
+		}
+		setInterval(getJoke, 10000)
 		$.get("https://v2.jokeapi.dev/joke/Programming?type=single",
 			function(result) {
 				console.log("From jokeAPI: " + JSON.stringify(result));
@@ -112,27 +118,10 @@
 	</div>
 
 	<div id="main">
-		<p>A simple HTML page </p>
-		Using the <a href="https://www.w3schools.com/html"> W3Schools Template</a>
-	
+		<b>Welcome to my Professional Portfolio</b>
+		Hello, my name is Ryan Sippy. I am a fourth-year computer science student at the University of Cincinnati. I am working towards both my Bachelor's degree in Computer Science with a minor in Business Analytics and a Master's of Science in Computer Science.
+		I have also completed three co-ops at Siemens Digital Industries Software, where I worked on the NX Visualization team.
 	<hr>
-	<b>Interaction with forms</b>
-		<div>
-			<i>Form with an HTTP GET Request</i>
-			<form action="/echo.php" mehto="GET">
-				Your input: <input name="data">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-		<div>
-			<i>Form with an HTTP POST Request</i>
-			<form action="/echo.php" method="POST" name="echo_post">
-				Your input: <input name="data"
-									onkeypress="console.log('You have pressed a key')">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-	
 	<div>
 		<i>Ajax requests</i><br>
 			Your input:
