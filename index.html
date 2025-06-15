@@ -13,6 +13,18 @@
 			background-color: #1abc9c;
 			color: #ffffff;
 		}
+		.bg-2 {
+    			background-color: #474e5d; 
+    			color: #ffffff;
+  		}
+		.bg-3 {
+    			background-color: #ffffff;
+    			color: #555555;
+  		}
+		.container-fluid {
+ 			padding-top: 70px;
+ 			padding-bottom: 70px;
+		}
 	</style>
 </head>
 <body>
@@ -93,19 +105,26 @@
 			</div>
     			<div class="col-md-8">
 				<div id="main">
+					<div class="container-fluid bg-2 text-center">
 					<b>Welcome to my Professional Portfolio</b><br>
 						Hello, my name is Ryan Sippy. I am a fourth-year computer science student at the University of Cincinnati. I am working towards both my Bachelor's degree in Computer Science with a minor in Business Analytics and a Master's of Science in Computer Science.
 						I have also completed three co-ops at Siemens Digital Industries Software, where I worked on the NX Visualization team.
+					</div>
 	<hr>
-					<div>
-						<b>External JokeAPI</b><br>
-						This is an external API. It will generate a new joke every minute. Because it is an third-party API, I have no control over the generated content.
-						<div id="jokeResponse"></div>
+					<div class="container-fluid bg-3 text-center">
+						<h3>External APIs</h3>
+						<div class="col-sm-6">
+							<b>External JokeAPI</b><be>
+							This is an external API. It will generate a new joke every minute. Because it is an third-party API, I have no control over the generated content.
+							<div id="jokeResponse"></div>
+						</div>
 			
 	<hr>
-						<b>External XKCD Comic API</b><be>
-						<button class="btn btn-secondary mb-3" onclick="getXKCD()">Show XKCD Comic</button>
-						<div id="xkcd"></div>
+						<div class="col-sm-6">
+							<b>External XKCD Comic API</b><be>
+							<button class="btn btn-secondary mb-3" onclick="getXKCD()">Show XKCD Comic</button>
+							<div id="xkcd"></div>
+						</div>
 					</div>
 				</div>
 			</div>
