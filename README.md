@@ -15,7 +15,7 @@
 # Individual Project 1: Front-End Web Development
 
 ## Project Overview
-This project is to create a professional profile website to showcase my front-end web development skills and other experiences to potential employers. This project has a variety of general, non-technical, and technical requirements that are discussed below.
+This project is to create a professional profile website to showcase my front-end web development skills and other experiences to potential employers. This project has a variety of general, non-technical, and technical requirements that are discussed below. The webpage can be seen here https://sippyr.github.io/, and the source code can be found here https://github.com/SippyR/SippyR.github.io/blob/main/index.html.
 
 ## General Requirements
 ### Requirement 1
@@ -28,8 +28,11 @@ I chose to include this link as part of my professional description on the main 
 
 ## Non-Technical Requirements
 ### Requirement 1
-The only non-technical requirement was to use an open-source CSS template or a framework such as Bootstrap. I chose to use a Bootstrap framework for my webpage. I decided to use the Bootstrap theme "Simply Me", which I was able to implement using the tutorial
+The first non-technical requirement was to use an open-source CSS template or a framework such as Bootstrap. I chose to use a Bootstrap framework for my webpage. I decided to use the Bootstrap theme "Simply Me", which I was able to implement using the tutorial
 on W3Schools https://www.w3schools.com/bootstrap/bootstrap_theme_me.asp.
+
+### Requirement 2
+The second non-technical requirement was to include a page tracker. This was something that I thought would be difficult, but it was not as hard as I thought. A flag counter(https://flagcounter.com/) was easy to implement because it was designed to be implemented as just an image.
 
 ## Technical Requirements
 ### Requirement 1
